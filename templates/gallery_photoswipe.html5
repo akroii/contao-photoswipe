@@ -1,0 +1,16 @@
+
+<div class="photoswipe  cols_<?= $this->perRow ?>">
+    <?php foreach ($this->body as $class=>$row): ?>
+        <?php foreach ($row as $col): ?>
+            <?php if ($col->addImage): ?>
+                <figure class="image_container <?= $class; ?> <?= $col->class; ?>"<?php if ($col->margin): ?> style="<?= $col->margin ?>"<?php endif; ?>>
+                    <a href="<?= $col->href ?>"<?= $col->attributes ?> title="<?= $col->alt ?>" data-size="<?= $col->width; ?>x<?= $col->height; ?>"><?php $this->insert('picture_default', $col->picture); ?></a>
+
+                    <?php if ($col->caption): ?>
+                        <figcaption class="caption"><?= $col->caption ?></figcaption>
+                    <?php endif; ?>
+                </figure>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+</div>
