@@ -21,7 +21,8 @@
     "require": {
         "php": ">=5.6",
         "contao/core": "~3.5",
-        "contao-community-alliance/composer-installer": "*"
+        "contao-community-alliance/composer-installer": "*",
+        "null0815/contao-vanillajs": "~1.0"
     },
     "replace": {
         "contao-legacy/photoswipe": "self.version"
