@@ -22,7 +22,7 @@
         "php": ">=5.6",
         "contao/core": "~3.5",
         "contao-community-alliance/composer-installer": "*",
-        "null0815/contao-vanillajs": "~1.0"
+        "null0815/contao-javascript-templates": "~1.0.2"
     },
     "replace": {
         "contao-legacy/photoswipe": "self.version"
